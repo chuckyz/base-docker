@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  base-docker:
+    image: base-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
